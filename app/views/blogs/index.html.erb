@@ -1,0 +1,19 @@
+<h1> Showing all the blogs </h1>
+<%= link_to'Create new blog', new_blog_path %>
+<table>
+  <tr>
+  <th> APELLATION </th>
+  <th> CAPTION </th>
+  <th> SPECIFICATION  </th>
+  </tr>
+ 
+  <% @blogs.each do |blog| %>
+  <tr>
+     <td><%= blog.apellation %></td>
+     <td><%= blog.caption %></td>
+     <td><%= blog.specification %></td>
+     <td><%= link_to'Show', blog_path(blog) %></td>
+     <td><%= link_to'Edit', edit_blog_path(blog) %></td>
+  </tr>
+  <% end %>
+</table>
