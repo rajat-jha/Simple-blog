@@ -12,6 +12,12 @@ class BlogsController < ApplicationController
      def show
      	@b = Blog.find(params[:id])
      end
+     def destroy
+     	@b = Blog.find(params[:id])
+     	@b.destroy
+     	flash[:notice] = "Blog was deleted"
+     	redirect_to blogs_path
+     end
 	 def create
 	     @b = Blog.new(blog_params)
 	     @b.save

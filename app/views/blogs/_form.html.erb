@@ -1,0 +1,27 @@
+<% if @b.errors.any? %>
+     <h2> Ur blog cant be created due to </h2>
+	 <ul>
+		 <% @b.errors.full_messages.each do |msg| %>
+		 <li> <%= msg %> </li>
+		 <% end %>
+	 </ul>
+<% end %>
+<%= form_for @b do |f| %>
+	<p>
+		<%= f.label :apellation %> </br>
+		<%= f.text_field :apellation %> </br>
+	</p>
+	<p>
+		<%= f.label :caption %> </br>
+		<%= f.text_area :caption %> </br>
+	</p>
+
+	<p>
+		<%= f.label :specification %> </br>
+		<%= f.text_area :specification %> </br>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>	
+<% end %>
+<%= link_to 'Back', blogs_path %>
