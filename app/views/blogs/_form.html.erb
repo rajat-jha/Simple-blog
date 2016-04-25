@@ -1,5 +1,5 @@
 <% if @b.errors.any? %>
-     <h2> Ur blog cant be created due to </h2>
+     <h2> following errors occured: </h2>
 	 <ul>
 		 <% @b.errors.full_messages.each do |msg| %>
 		 <li> <%= msg %> </li>
