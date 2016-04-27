@@ -12,14 +12,14 @@ class BlogsController < ApplicationController
      end
      def destroy
      	@b.destroy
-     	flash[:notice] = "Blog was deleted"
+     	flash[:danger] = "Blog was deleted"
      	redirect_to blogs_path
      end
 	 def create
 	     @b = Blog.new(blog_params)
 	     @b.save
 	     if @b.save
-	     	flash[:notice] = 'Blog is successfully created'
+	     	flash[:success] = 'Blog is successfully created'
 	     	redirect_to blog_path(@b)
 	     else
 	     	render 'new'
@@ -27,7 +27,7 @@ class BlogsController < ApplicationController
 	 end
      def update
      	if @b.update(blog_params)
-     		flash[:notice] = "Blog is successfully updated"
+     		flash[:success] = "Blog is successfully updated"
      		redirect_to blog_path(@b)
      	else 
      		render 'edit'

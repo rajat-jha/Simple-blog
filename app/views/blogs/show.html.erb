@@ -1,12 +1,17 @@
-<h1> Showing Ur blog </h1>
-<p>
-	Apellation: <%= @b.apellation %>
-</p>
-<p>
-	Caption: <%= @b.caption %>
-</p>
-<p>
-	Specificaion: <%= @b.specification %>
-</p>
-<%= link_to 'Edit', edit_blog_path %>
-<%= link_to 'Back', blogs_path %>
+
+	<h1 align="center">Apellation: <%= @b.apellation %></h1>
+	<div class="well col-sm-10 col-sm-offset-1">
+		<h3 align="center">Caption:</h3>
+		<%= @b.caption %>
+	    </br>
+		<h3 align="center">
+			<strong>Specificaion:</strong>
+			</br>
+			<%= @b.specification %>
+		</h3>
+		<%= link_to 'Edit', edit_blog_path, class: "btn btn-primary" %>
+		<%= link_to 'Delete', blog_path, method: :delete, 
+		            data:{cofirm:"Are u sure u want to delete ur blog?"}, 
+		            class: "btn btn-danger" %>
+		<%= link_to 'Back', blogs_path , class: "btn btn-info" %>
+	</div>

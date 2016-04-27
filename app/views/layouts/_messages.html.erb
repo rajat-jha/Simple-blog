@@ -1,5 +1,11 @@
-<% flash.each do|name, msg| %>
-<ul>
-	 <li><%= msg %></li>
-</ul>
-<% end %>
+
+    <div class="col-xs-10 col-xs-offset-1">
+	    <% flash.each do|name, msg| %>
+		    <div class="alert alert-<%="#{name}"%> alert-dissimible" role="alert"> 
+			    <button type="button" class="close" data-dismiss="alert" >&times;</button>
+				 <ul>
+					 <li><%= msg %></li>
+				</ul>
+			</div>
+		<% end %>
+	</div>
