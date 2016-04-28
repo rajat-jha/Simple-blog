@@ -21,7 +21,7 @@ $navbar-default-bg: #EDBB99;
 	font-size: 1.4em;
 }
 
-
+// // // // error
 .error-h2{
 	padding: 0px;
     margin-top: 0px;
@@ -30,7 +30,7 @@ $navbar-default-bg: #EDBB99;
 	 margin: 6px 12px 0 0;	
 }
 
-
+// // // // root
 .create-btn{
 	font-size: 1.4em;
 }
@@ -69,4 +69,35 @@ $navbar-default-bg: #EDBB99;
 	padding: 10px ;
 	padding-top: 20px;
 	margin-top: 40px;
+}
+
+
+// // // // index
+.b-apellation{
+	align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	padding: 15px 0 15px 0;
+	margin: 0;
+	border-bottom: 1px solid #518EC2;
+	font-weight: bold;
+}
+.b-caption{
+	padding: 15px 0 15px 0;
+	font-size: 1.2em;
+	margin: 0;
+	border-bottom: 1px solid #518EC2;
+	font-weight: 1px;
+}
+.b-specification{
+	padding: 15px 0 15px 0;
+	font-size: 1.2em;
+	margin: 0;
+	border-bottom: 1px solid #518EC2;
+	font-weight: 1px;
+}
+.index-button{
+	padding: 10px;
+}
+.well-index{
 }

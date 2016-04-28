@@ -1,20 +1,25 @@
-<h1> Showing all the blogs </h1>
-<%= link_to'Create new blog', new_blog_path %>
-<table>
-  <tr>
-  <th> APELLATION </th>
-  <th> CAPTION </th>
-  <th> SPECIFICATION  </th>
-  </tr>
- 
-  <% @blogs.each do |blog| %>
-  <tr>
-     <td><%= blog.apellation %></td>
-     <td><%= blog.caption %></td>
-     <td><%= blog.specification %></td>
-     <td><%= link_to'Show', blog_path(blog) %></td>
-     <td><%= link_to'Edit', edit_blog_path(blog) %></td>
-     <td><%= link_to'Delete', blog_path(blog) ,method: :delete, data: {confirm: "Are u sure u want to delete this blog "} %></td>
-  </tr>
-  <% end %>
-</table>
+<h1 align="center"> <b>Daily Blogs </b></h1>
+<%= link_to 'Create new blog', new_blog_path, align: "center" %>
+<br/>
+<% @b.each do |bl| %>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="well well-lg well-index">
+        <div  class="b-apellation">
+          <%= link_to bl.apellation, blog_path(bl) %>
+        </div>
+        <div class="b-caption">
+           <%= link_to truncate(bl.caption, length: 100), blog_path(bl) %>
+        </div>
+        <div class="b-specification">
+           <%= link_to truncate(bl.specification, length: 100), blog_path(bl) %>
+        </div>
+        <div class="index-button">
+           <%= link_to 'Edit', edit_blog_path(bl), class: "btn btn-primary btn-sm" %>
+           <%= link_to 'Delete', blogs_path, method: :delete, 
+                  data:{ cofirm: "Are u sure u want to delete this blog?" }, class: "btn btn-danger btn-sm" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

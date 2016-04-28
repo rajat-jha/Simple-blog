@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
 	 before_action :find_blog, only: [:edit, :show, :destroy, :update]
      def index
-     	@blogs = Blog.all
+     	@b = Blog.all
      end
 	 def new
 		@b = Blog.new
