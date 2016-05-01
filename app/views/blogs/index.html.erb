@@ -1,6 +1,5 @@
 <h1 align="center"> <b>Daily Blogs </b></h1>
-<%= link_to 'Create new blog', new_blog_path, align: "center" %>
-<br/>
+<%= link_to 'Create new blog', new_blog_path, class: "index-create-new-blog" %>
 <% @b.each do |bl| %>
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
@@ -9,10 +8,10 @@
           <%= link_to bl.apellation, blog_path(bl) %>
         </div>
         <div class="b-caption">
-           <%= link_to truncate(bl.caption, length: 100), blog_path(bl) %>
+           <%= link_to truncate(bl.caption, length: 20), blog_path(bl) %>
         </div>
         <div class="b-specification">
-           <%= link_to truncate(bl.specification, length: 100), blog_path(bl) %>
+           <%= link_to truncate(bl.specification, length: 20), blog_path(bl) %>
         </div>
         <div class="index-button">
            <%= link_to 'Edit', edit_blog_path(bl), class: "btn btn-primary btn-sm" %>

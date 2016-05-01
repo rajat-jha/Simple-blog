@@ -74,7 +74,7 @@ $navbar-default-bg: #EDBB99;
 
 // // // // index
 .b-apellation{
-	align: center;
+	align: center;  **
 	font-size: 1.6em;
 	text-transform: uppercase;
 	padding: 15px 0 15px 0;
@@ -97,7 +97,10 @@ $navbar-default-bg: #EDBB99;
 	font-weight: 1px;
 }
 .index-button{
-	padding: 10px;
+	padding: 10px; **
+}
+.index-create-new-blog{
+	float: right;
 }
 .well-index{
 }
