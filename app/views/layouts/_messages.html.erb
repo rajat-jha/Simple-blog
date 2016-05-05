@@ -1,10 +1,10 @@
 
     <div class="col-xs-10 col-xs-offset-1">
 	    <% flash.each do|name, msg| %>
-		    <div class="alert alert-<%="#{name}"%> alert-dissimible" role="alert"> 
+		    <div class='alert alert-<%= "#{name}" %> alert-dissimible' role="alert"> 
 			    <button type="button" class="close" data-dismiss="alert" >&times;</button>
 				 <ul>
-					 <li><%= msg %></li>
+					 <li><%= content_tag :div, msg,:id=> "flash_#{name}" if msg.is_a?(String) %></li>
 				</ul>
 			</div>
 		<% end %>

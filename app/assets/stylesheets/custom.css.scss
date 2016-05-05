@@ -3,7 +3,7 @@ $navbar-default-bg: #EDBB99;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// // // // navbar
+
 .navbar-brand{
 	float: left;
 	font-size: 1.8em;
@@ -16,12 +16,11 @@ $navbar-default-bg: #EDBB99;
 	text-align: center;
 	margin: 20px;
 }
-
 .form-head{
 	font-size: 1.4em;
 }
 
-// // // // error
+
 .error-h2{
 	padding: 0px;
     margin-top: 0px;
@@ -30,7 +29,8 @@ $navbar-default-bg: #EDBB99;
 	 margin: 6px 12px 0 0;	
 }
 
-// // // // root
+
+
 .create-btn{
 	font-size: 1.4em;
 }
@@ -51,7 +51,8 @@ $navbar-default-bg: #EDBB99;
 	font-size: 1.7em;
 }
 
-// // // //footer
+
+
 .enterprises{
 	text-decoration: none;
 }
@@ -72,9 +73,10 @@ $navbar-default-bg: #EDBB99;
 }
 
 
-// // // // index
+
+
 .b-apellation{
-	align: center;  **
+	align: center;
 	font-size: 1.6em;
 	text-transform: uppercase;
 	padding: 15px 0 15px 0;
@@ -97,7 +99,7 @@ $navbar-default-bg: #EDBB99;
 	font-weight: 1px;
 }
 .index-button{
-	padding: 10px; **
+	padding: 10px; 
 }
 .index-create-new-blog{
 	float: right;
