@@ -17,6 +17,7 @@ class BlogsController < ApplicationController
      end
 	 def create
 	     @b = Blog.new(blog_params)
+          @b.user = User.find(3)
 	     @b.save
 	     if @b.save
 	     	flash[:success] = 'Blog is successfully created'

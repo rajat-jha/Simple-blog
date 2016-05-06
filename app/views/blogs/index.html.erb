@@ -13,6 +13,11 @@
         <div class="b-specification">
            <%= link_to truncate(bl.specification, length: 20), blog_path(bl) %>
         </div>
+        <small class="blog-meta-details"> 
+          Created by: <%= bl.user.username if bl.user %>
+          <%= time_ago_in_words(bl.created_at) %> ago, 
+          last updated: <%= time_ago_in_words(bl.updated_at) %> 
+        </small>
         <div class="index-button">
            <%= link_to 'Edit', edit_blog_path(bl), class: "btn btn-primary btn-sm" %>
            <%= link_to 'Delete', blogs_path, method: :delete, 

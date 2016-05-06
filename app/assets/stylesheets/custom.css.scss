@@ -3,7 +3,7 @@ $navbar-default-bg: #EDBB99;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
+// navbar
 .navbar-brand{
 	float: left;
 	font-size: 1.8em;
@@ -20,7 +20,7 @@ $navbar-default-bg: #EDBB99;
 	font-size: 1.4em;
 }
 
-
+// error
 .error-h2{
 	padding: 0px;
     margin-top: 0px;
@@ -30,7 +30,7 @@ $navbar-default-bg: #EDBB99;
 }
 
 
-
+//button
 .create-btn{
 	font-size: 1.4em;
 }
@@ -52,7 +52,7 @@ $navbar-default-bg: #EDBB99;
 }
 
 
-
+// footer
 .enterprises{
 	text-decoration: none;
 }
@@ -74,7 +74,7 @@ $navbar-default-bg: #EDBB99;
 
 
 
-
+// index page
 .b-apellation{
 	align: center;
 	font-size: 1.6em;
@@ -84,6 +84,7 @@ $navbar-default-bg: #EDBB99;
 	border-bottom: 1px solid #518EC2;
 	font-weight: bold;
 }
+
 .b-caption{
 	padding: 15px 0 15px 0;
 	font-size: 1.2em;
@@ -97,6 +98,10 @@ $navbar-default-bg: #EDBB99;
 	margin: 0;
 	border-bottom: 1px solid #518EC2;
 	font-weight: 1px;
+}
+.blog-meta-details{
+    padding-top: 15px;
+    font-size: 0.9em;	
 }
 .index-button{
 	padding: 10px; 
